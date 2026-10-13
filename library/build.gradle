@@ -1,7 +1,5 @@
 apply plugin: 'com.android.library'
-apply plugin: 'org.jetbrains.kotlin.android'
 apply plugin: 'kotlin-parcelize'
-apply plugin: 'com.google.devtools.ksp'
 
 android {
     namespace 'dev.jahir.blueprint'
@@ -26,14 +24,7 @@ android {
         versionCode Blueprint.version
         versionName Blueprint.versionName
         vectorDrawables.useSupportLibrary true
-        proguardFiles 'proguard-android-optimize.txt', 'proguard-rules.pro'
-        consumerProguardFiles 'proguard-android-optimize.txt', 'proguard-rules.pro'
-
-        ksp {
-            arg("room.schemaLocation", "$projectDir/schemas")
-            arg("room.incremental", "true")
-            arg("room.expandProjection", "true")
-        }
+        consumerProguardFiles 'proguard-rules.pro'
     }
 
     buildTypes {
@@ -43,13 +34,7 @@ android {
         }
         release {
             minifyEnabled false
-            proguardFiles 'proguard-android-optimize.txt', 'proguard-rules.pro'
-            consumerProguardFiles 'proguard-android-optimize.txt', 'proguard-rules.pro'
         }
-    }
-
-    sourceSets {
-        main.java.srcDirs += 'src/main/kotlin'
     }
 
     packagingOptions {
@@ -66,10 +51,6 @@ android {
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_17
         targetCompatibility JavaVersion.VERSION_17
-    }
-
-    kotlinOptions {
-        jvmTarget = '17'
     }
 
     buildFeatures {

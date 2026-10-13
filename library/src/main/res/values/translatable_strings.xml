@@ -15,7 +15,7 @@
     <string name="search_launchers">Search Launchers</string>
     <string name="lni_content">“%1$s” isn’t installed. Do you want to get it from Google Play?</string>
     <string name="no_compatible_launcher_title">Launcher Incompatible</string>
-    <string name="no_compatible_launcher_content">“Google Now Launcher” doesn’t support icon packs unless paired with “Awesome Shortcuts.” Install the latter?</string>
+    <string name="launcher_icon_packs_not_supported">“%1$s” doesn’t support icon packs.</string>
     <string name="impossible_open_themes">Can’t Open App</string>
     <string name="themes_app_not_installed">“Themes” isn’t installed.</string>
     <string name="coming_soon">Coming soon.</string>
@@ -24,8 +24,6 @@
     <string name="request_x_icons">Request %1$s Icons</string>
     <string name="request_icon">Request Icon</string>
     <string name="request_none">Request Icon(s)</string>
-    <string name="kustom_templates">Kustom Templates</string>
-    <string name="zooper_templates">Zooper Templates</string>
     <string name="rate">Rate</string>
     <string name="share">Share</string>
     <string name="share_text">Get %1$s on Google Play: %2$s.</string>
@@ -96,4 +94,5 @@
         <item>It’s needed to adjust the dimensions of wallpapers based on the resolution of your device’s screen.</item>
         <item>It’s needed by Muzei Live Wallpaper.</item>
     </string-array>
+    <string name="templates">Templates</string>
 </resources>

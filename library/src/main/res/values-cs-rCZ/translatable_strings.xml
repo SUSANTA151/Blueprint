@@ -15,7 +15,6 @@
     <string name="search_launchers">Hledat spouštěče</string>
     <string name="lni_content">Aplikace “%1$s” není nainstalována. Chcete ji nainstalovat z Obchodu Play?</string>
     <string name="no_compatible_launcher_title">Spouštěč není kompatibilní</string>
-    <string name="no_compatible_launcher_content">\"Spouštěč Google Now\" nepodporuje balíčky ikon, pokud není spárován s \"Awesome Shortcuts\". Nainstalovat jiný?</string>
     <string name="impossible_open_themes">Aplikaci nelze otevřít</string>
     <string name="themes_app_not_installed">“Motivy” nejsou nainstalovány.</string>
     <string name="coming_soon">Již brzy.</string>
@@ -24,8 +23,6 @@
     <string name="request_x_icons">Požadavek na ikony: %1$s</string>
     <string name="request_icon">Požadavek na ikonu</string>
     <string name="request_none">Požadavek na ikonu(y)</string>
-    <string name="kustom_templates">Kustom Templates</string>
-    <string name="zooper_templates">Zooper Templates</string>
     <string name="rate">Ohodnotit</string>
     <string name="share">Sdílet</string>
     <string name="share_text">Získejte %1$s v Obchodu Play: %2$s.</string>
@@ -33,7 +30,7 @@
     <string name="send_using">Odeslat pomocí:</string>
     <string name="request_in_progress">Odesílání požadavku</string>
     <string name="request_in_progress_content">Požadavek se již odesílá.</string>
-    <string name="building_request_dialog">Příprava požadavku...</string>
+    <string name="building_request_dialog">Příprava požadavku…</string>
     <string name="request_upload_success_content">Požadavek odeslán.</string>
     <string name="no_selected_apps">Žádné vybrané aplikace</string>
     <string name="no_selected_apps_content">Vyberte aplikace, o které chcete požádat.</string>
@@ -94,4 +91,5 @@
         <item>Toto oprávnění umožňuje upravit rozměry tapety na základě rozlišení vaší obrazovky.</item>
         <item>Toto oprávnění je vyžadováno aplikací Muzei Live Wallpaper.</item>
     </string-array>
+    <string name="templates">Šablony</string>
 </resources>

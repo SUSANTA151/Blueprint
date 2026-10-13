@@ -15,7 +15,6 @@
     <string name="search_launchers">Buscar launchers</string>
     <string name="lni_content">“%1$s” no está instalado. ¿Quieres obtenerlo de Google Play?</string>
     <string name="no_compatible_launcher_title">Launcher no compatible</string>
-    <string name="no_compatible_launcher_content">“Google Now Launcher” no soporta paquetes de iconos a menos que esté emparejado con “Awesome Shortcuts.” ¿Quieres instalarlo?</string>
     <string name="impossible_open_themes">No se puede abrir la aplicación</string>
     <string name="themes_app_not_installed">“Temas” no está instalado.</string>
     <string name="coming_soon">Proximamente.</string>
@@ -24,8 +23,6 @@
     <string name="request_x_icons">Solicitar %1$s iconos</string>
     <string name="request_icon">Solicitar icono</string>
     <string name="request_none">Solicitar icono(s)</string>
-    <string name="kustom_templates">Plantillas Kustom</string>
-    <string name="zooper_templates">Plantillas de Zooper</string>
     <string name="rate">Calificar</string>
     <string name="share">Compartir</string>
     <string name="share_text">Obtén %1$s en Google Play: %2$s.</string>
@@ -33,7 +30,7 @@
     <string name="send_using">Enviar con:</string>
     <string name="request_in_progress">Enviando Solicitud</string>
     <string name="request_in_progress_content">Ya se está enviando una solicitud.</string>
-    <string name="building_request_dialog">Preparando solicitud...</string>
+    <string name="building_request_dialog">Preparando solicitud…</string>
     <string name="request_upload_success_content">Solicitud enviada.</string>
     <string name="no_selected_apps">No hay aplicaciones seleccionadas</string>
     <string name="no_selected_apps_content">Selecciona aplicaciones para enviar una solicitud.</string>
@@ -94,4 +91,5 @@
         <item>Es necesario para poder ajustar las dimensiones de los fondos de pantalla en función de la resolución de tu pantalla.</item>
         <item>Es necesario para Muzei Live Wallpaper.</item>
     </string-array>
+    <string name="templates">Plantillas</string>
 </resources>

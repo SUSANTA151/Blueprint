@@ -14,7 +14,6 @@
     <string name="search_launchers">Rechercher des lanceurs</string>
     <string name="lni_content">“%1$s” n’est pas installé. Voulez-vous l’obtenir depuis le Google Play?</string>
     <string name="no_compatible_launcher_title">Lanceur incompatible</string>
-    <string name="no_compatible_launcher_content">« Google Now Launcher» ne prend pas en charge les packs d’icônes à moins qu’ils ne soient jumelés avec des «Awesome Shortcuts». Installer ce dernier ?</string>
     <string name="impossible_open_themes">Impossible d\'ouvrir l\'application</string>
     <string name="themes_app_not_installed">« Thèmes» n’est pas installé.</string>
     <string name="coming_soon">Prochainement.</string>
@@ -22,16 +21,14 @@
     <string name="request_x_icons">Demander %1$s icônes</string>
     <string name="request_icon">Demander une icône</string>
     <string name="request_none">Demander des icônes</string>
-    <string name="kustom_templates">Modèles Kustom</string>
-    <string name="zooper_templates">Modèles Zooper</string>
     <string name="rate">Évaluer</string>
     <string name="share">Partager</string>
     <string name="share_text">Obtenez %1$s sur Google Play : %2$s.</string>
     <string name="send_email">Envoyer un e-mail</string>
     <string name="send_using">Envoyer avec:</string>
-    <string name="request_in_progress">Envoi de demande...</string>
+    <string name="request_in_progress">Envoi de demande…</string>
     <string name="request_in_progress_content">Une demande est déjà en cours d\'envoi.</string>
-    <string name="building_request_dialog">Préparation de la requête...</string>
+    <string name="building_request_dialog">Préparation de la requête…</string>
     <string name="request_upload_success_content">Demande envoyée.</string>
     <string name="no_selected_apps">Aucune app sélectionnée</string>
     <string name="no_selected_apps_content">Sélectionnez les applications pour envoyer une demande.</string>
@@ -78,7 +75,7 @@
         <item>Selon le launcher utilisé, vous devez soit maintenir appuyé l\'icône puis sélectionner \"Modifier\" depuis le menu, soit maintenir appuyé l\'icône puis le déplacer vers le message \"Modifier\".</item>
         <item>Selon le type de navigation, vous devez soit faire glisser le panneau de navigation depuis la gauche et sélectionner \"Demande d\'icônes\", soit choisir l\'icône depuis la barre de navigation du bas.</item>
         <item>Cela se produit lorsque le pack d\'icônes a été déplacé sur la Carte SD, vous devez l\'installer sur la mémoire interne.</item>
-        <item>Le problème peut venir de votre lanceur, lors de la gestion de la haute résolution. Vous pouvez le réparer en augmentant la taille des icônes à 115 - 120%. Ou essayez un autre lanceur.</item>
+        <item>Le problème peut venir de votre lanceur, lors de la gestion de la haute résolution. Vous pouvez le réparer en augmentant la taille des icônes à 115–120%. Ou essayez un autre lanceur.</item>
         <item>Envoyer une demande d\'icône.</item>
         <item>Il est nécessaire pour pouvoir écrire les données et fichiers de requêtes d\'icônes, ainsi que d\'enregistrer les fonds d\'écran, et être en mesure de changer l\'emplacement de téléchargement des fonds d\'écran.</item>
         <item>Cela est nécessaire pour le chargement des fonds d\'écran depuis le cloud et les sauvegarder.</item>
@@ -87,4 +84,5 @@
         <item>C\'est nécessaire pour pouvoir ajuster les dimensions du fond d\'écran en fonction de la résolution de votre écran.</item>
         <item>C\'est nécessaire pour Muzei Live Wallpaper.</item>
     </string-array>
+    <string name="templates">Templates</string>
 </resources>

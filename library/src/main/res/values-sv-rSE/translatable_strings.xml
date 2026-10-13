@@ -14,7 +14,6 @@
     <string name="search_launchers">Sök launchers</string>
     <string name="lni_content">“%1$s” är inte installerat. Vill du hämta den från Google Play?</string>
     <string name="no_compatible_launcher_title">Launcher Inkompatibel</string>
-    <string name="no_compatible_launcher_content">“Google Now Launcher” stöder inte ikonpaket såvida inte paras ihop med “Grymma genvägar.” Installera senare?</string>
     <string name="impossible_open_themes">Kan inte öppna appen</string>
     <string name="themes_app_not_installed">“Teman” är inte installerat.</string>
     <string name="coming_soon">Kommer snart.</string>
@@ -22,8 +21,6 @@
     <string name="request_x_icons">Begär %1$s ikoner</string>
     <string name="request_icon">Begär ikon</string>
     <string name="request_none">Begär ikon(er)</string>
-    <string name="kustom_templates">Kustom mallar</string>
-    <string name="zooper_templates">Zooper mallar</string>
     <string name="rate">Rate</string>
     <string name="share">Dela</string>
     <string name="share_text">Få %1$s på Google Play: %2$s.</string>
@@ -31,7 +28,7 @@
     <string name="send_using">Skicka med:</string>
     <string name="request_in_progress">Skickar begäran</string>
     <string name="request_in_progress_content">En begäran har redan skickats.</string>
-    <string name="building_request_dialog">Förbereder begäran...</string>
+    <string name="building_request_dialog">Förbereder begäran…</string>
     <string name="request_upload_success_content">Begäran skickad.</string>
     <string name="no_selected_apps">Inga appar valda</string>
     <string name="no_selected_apps_content">Välj appar för att skicka en förfrågan.</string>

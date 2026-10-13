@@ -6,7 +6,6 @@
         <item>adwex</item>
         <item>aio</item>
         <item>apex</item>
-        <item>atom</item>
         <item>gip</item>
         <item>go</item>
         <item>googlenow</item>
@@ -28,5 +27,6 @@
         <item>solo</item>
         <item>square</item>
         <item>tsf</item>
+        <item>yasan</item>
     </string-array>
 </resources>

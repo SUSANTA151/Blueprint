@@ -12,15 +12,10 @@
     <string name="search_icons">Search icons…</string>
     <string name="lni_content">%1$s is currently not installed on your device.\nWould you like to install it from the Google Play Store?</string>
     <string name="no_compatible_launcher_title">This launcher is NOT Compatible</string>
-    <string name="no_compatible_launcher_content">This launcher is NOT compatible with ANY Icon Packs and therefore you cannot use this icon pack with this launcher. Please do not rate the icon pack negatively for this reason. There is a solution that you can try for yourself, but it requires the use of an external app. Would you like to download it?</string>
     <string name="impossible_open_themes">Impossible to open themes app</string>
     <string name="themes_app_not_installed">Themes app is not installed in this device</string>
     <string name="coming_soon">Coming soon</string>
     <string name="quick_apply">Quick Apply</string>
-    <string name="send_request">Send request</string>
-    <string name="send_request_x">Send request (%1$s)</string>
-    <string name="kustom_templates">Kustom Templates</string>
-    <string name="zooper_templates">Zooper Templates</string>
     <string name="rate">Rate</string>
     <string name="share">Paylaş</string>
     <string name="share_text">%1$s simge paketine göz atın ve arkadaşlarınıza bundan bahsedin!\nGoogle Play Store\'da şu adresten ulaşılabilir: %2$s</string>
@@ -29,7 +24,6 @@
     <string name="request_in_progress">İstek işleniyor</string>
     <string name="request_in_progress_content">Halen devam etmekte olan bir talep var. Lütfen bekleyin…</string>
     <string name="building_request_dialog">İstek dosyaları oluşturuluyor…</string>
-    <string name="request_upload_success">Başarılı!</string>
     <string name="request_upload_success_content">İstek başarıyla sunucumuza yüklendi.</string>
     <string name="no_selected_apps">Seçili uygulama yok</string>
     <string name="no_selected_apps_content">İstenecek uygulamaları seçmediniz. Lütfen birkaç uygulama seçin ve ardından bu tuşa tekrar dokunun.</string>

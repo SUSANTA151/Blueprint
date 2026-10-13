@@ -21,7 +21,7 @@ import dev.jahir.kuper.extensions.isAppInstalled
 fun Context.executeLauncherIntent(launcher: Launcher?) {
     launcher ?: return
     if (!launcher.isActuallySupported) {
-        executeIconPacksNotSupportedIntent()
+        showIconPacksNotSupportedDialog(launcher)
         return
     }
     when (launcher) {
@@ -49,19 +49,17 @@ fun Context.executeLauncherIntent(launcher: Launcher?) {
         Launcher.SOLO -> executeSoloLauncherIntent()
         Launcher.SQUARE -> executeSquareHomeIntent()
         Launcher.TSF -> executeTsfLauncherIntent()
+        Launcher.YASAN -> executeYasanLauncherIntent()
         else -> showLauncherApplyError()
     }
 }
 
-private fun Context.executeIconPacksNotSupportedIntent() {
+private fun Context.showIconPacksNotSupportedDialog(launcher: Launcher) {
     try {
         mdDialog {
             title(R.string.no_compatible_launcher_title)
-            message(R.string.no_compatible_launcher_content)
-            positiveButton(android.R.string.ok) {
-                openLink(PLAY_STORE_LINK_PREFIX + "com.momocode.shortcuts")
-            }
-            negativeButton(android.R.string.cancel)
+            message(getString(R.string.launcher_icon_packs_not_supported, launcher.appName))
+            positiveButton(android.R.string.ok)
         }.show()
     } catch (_: Exception) {
     }
@@ -98,17 +96,24 @@ private fun Context.showLauncherApplyError(
     }
 }
 
+/**
+ * Starts the [intent] for [launcher]. If it is null or fails, tries [fallbackIntent], and shows
+ * the apply error only when both fail
+ */
 private fun Context.attemptApply(
     launcher: Launcher?,
     customContent: String? = null,
+    fallbackIntent: (() -> Intent?)? = null,
     intent: (() -> Intent?)? = null
 ) {
-    try {
-        intent?.invoke()?.let { startActivity(it) }
-            ?: showLauncherApplyError(launcher, customContent)
-    } catch (e: Exception) {
-        showLauncherApplyError(launcher, customContent)
+    val started = listOfNotNull(intent, fallbackIntent).any { buildIntent ->
+        try {
+            buildIntent()?.let { startActivity(it) } != null
+        } catch (_: Exception) {
+            false
+        }
     }
+    if (!started) showLauncherApplyError(launcher, customContent)
 }
 
 private fun Context.executeActionLauncherIntent() {
@@ -361,15 +366,27 @@ private fun Context.executeTsfLauncherIntent() {
     }
 }
 
-private fun Context.executeMotoLauncherIntent() {
-    attemptApply(Launcher.MOTO) {
-        Intent().apply {
-            component = ComponentName(
-                "com.motorola.personalize",
-                "com.motorola.personalize.app.IconPacksActivity"
-            )
-            putExtra("package", packageName)
+private fun Context.executeYasanLauncherIntent() {
+    attemptApply(Launcher.YASAN) {
+        Intent("yasan.space.mnml.ai.launcher.APPLY_ICONS").apply {
+            putExtra("packageName", packageName)
         }
+    }
+}
+
+private fun Context.executeMotoLauncherIntent() {
+    val intent = Intent().apply {
+        component = ComponentName(
+            "com.motorola.personalize",
+            "com.motorola.personalize.app.IconPacksActivity"
+        )
+        putExtra("package", packageName)
+    }
+    // Since Android 14, an intent without an action matches none of the target's intent
+    // filters, so newer Moto builds only open this screen with the MAIN action. The intent
+    // without an action stays as the fallback older builds were opened with
+    attemptApply(Launcher.MOTO, fallbackIntent = { intent }) {
+        Intent(intent).setAction(Intent.ACTION_MAIN)
     }
 }
 

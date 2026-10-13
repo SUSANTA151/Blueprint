@@ -14,7 +14,6 @@
     <string name="search_launchers">Launcher durchsuchen</string>
     <string name="lni_content">“%1$s” ist nicht installiert. Möchten Sie es von Google Play herunterladen?</string>
     <string name="no_compatible_launcher_title">Launcher inkompatibel</string>
-    <string name="no_compatible_launcher_content">„Google Now Launcher“ unterstützt keine Icon-Packs, es sei denn „Awesome Shortcuts“ ist installiert. Wollen sie jetzt Installieren?</string>
     <string name="impossible_open_themes">Kann App nicht öffnen</string>
     <string name="themes_app_not_installed">„Themes“ ist nicht installiert.</string>
     <string name="coming_soon">Demnächst verfügbar.</string>
@@ -22,8 +21,6 @@
     <string name="request_x_icons">%1$s Icons anfordern</string>
     <string name="request_icon">Icon anfordern</string>
     <string name="request_none">Icon(s) anfordern</string>
-    <string name="kustom_templates">Benutzerdefinierte Vorlagen</string>
-    <string name="zooper_templates">Zooper Vorlagen</string>
     <string name="rate">Bewerten</string>
     <string name="share">Teilen</string>
     <string name="share_text">Holen Sie sich %1$s auf Google Play: %2$s.</string>
@@ -31,7 +28,7 @@
     <string name="send_using">Senden mit:</string>
     <string name="request_in_progress">Anfrage senden</string>
     <string name="request_in_progress_content">Eine Anfrage wurde bereits gesendet.</string>
-    <string name="building_request_dialog">Anfrage wird vorbereitet...</string>
+    <string name="building_request_dialog">Anfrage wird vorbereitet…</string>
     <string name="request_upload_success_content">Anfrage versendet.</string>
     <string name="no_selected_apps">Keine Apps ausgewählt</string>
     <string name="no_selected_apps_content">Wähle Apps für eine Anfrage aus.</string>
@@ -78,7 +75,7 @@
         <item>Abhängig vom Launcher, den du verwendest, musst du entweder lange auf das Icon tippen und auf \"Bearbeiten\" im Pop-up-Menü tippen oder das Icon auf ein \"Bearbeiten\"-Feld ziehen.</item>
         <item>Abhängig von der Art der Navigation der App musst du entweder von der linken Seite das Navigationsmenü öffnen und den Abschnitt \"Anfragen\" antippen, oder du musst das entsprechende Icon in der unteren Navigationsleiste antippen.</item>
         <item>Das ist passiert, weil das Icon Pack auf die SD-Karte verschoben wurde. Du solltest es auf dem internen Speicher installieren.</item>
-        <item>Dieses Problem wird durch den Launcher bedingt und dessen Handhabung bei hohen Auflösungen. Du kannst das Problem lösen, indem du die Icon-Größe auf 115 - 120 % erhöhst. Du kannst auch versuchen, einen anderen Launcher zu verwenden.</item>
+        <item>Dieses Problem wird durch den Launcher bedingt und dessen Handhabung bei hohen Auflösungen. Du kannst das Problem lösen, indem du die Icon-Größe auf 115–120 % erhöhst. Du kannst auch versuchen, einen anderen Launcher zu verwenden.</item>
         <item>Eine Icon-Anfrage senden.</item>
         <item>Diese wird verwendet, um Daten für Icon-Anfragen speichern zu können, genauso wie für das Speichern der Hintergrundbildern und zur Änderung des Download-Verzeichnisses.</item>
         <item>Diese wird verwendet, um Hintergrundbilder aus der Cloud herunterladen zu können.</item>
@@ -87,4 +84,5 @@
         <item>Diese wird verwendet, um die Größe des Hintergrundbildes an deine Bildschirmauflösung anzupassen.</item>
         <item>Dies wird von „Muzei Live Wallpaper” benötigt.</item>
     </string-array>
+    <string name="templates">Vorlagen</string>
 </resources>
